@@ -1,0 +1,12 @@
+<div class="mx-auto pt-8">
+  <div class="mb-8">
+    <div #wave class="bg-gray-200 h-16 rounded-lg shadow-md"></div>
+  </div>
+  <button (click)="playPause()" class="w-32 inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition duration-300 ease-in-out mt-9">
+    @if (isPlaying()) {
+      <span>Pause</span>
+    } @else {
+      Play
+    }
+  </button>
+</div>
